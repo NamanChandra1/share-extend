@@ -39,6 +39,29 @@
           "height": 500
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "build": {
+          "experimental": {
+            "ios": {
+              "appExtensions": [
+                {
+                  "targetName": "shareextensionShareExtension",
+                  "bundleIdentifier": "com.namanchandra.share-extension.ShareExtension",
+                  "entitlements": {
+                    "com.apple.security.application-groups": [
+                      "group.com.namanchandra.share-extension"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "projectId": "aa272637-8a43-4496-ba28-55abbc9be202"
+      },
+      "appleApplicationGroup": "group.com.namanchandra.share-extension"
+    }
   }
 }
